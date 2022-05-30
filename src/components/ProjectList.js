@@ -4,7 +4,7 @@ import ProjectItem from "./ProjectItem";
 function ProjectList({ projects }) {
   console.log(projects);
   const projectsInList = projects.map((project) => {
-    return <ProjectItem key={project.id} name={project.name} technologies={project.technologies}></ProjectItem>
+    return <ProjectItem key={project.id} name={project.name} about={project.about} technologies={project.technologies}></ProjectItem>
   })
   return (
     <div id="projects">
